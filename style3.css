@@ -1,0 +1,478 @@
+* { 
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font: arial , sans-serif;
+}
+
+.navbar{
+    height: 60px;
+    background-color: rgb(8, 56, 8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* first box */
+
+.nav-logo{
+    height: 50px;
+    width: 113px;
+   
+}
+
+.logo{
+    background-image: url(amazon\ logo.png);
+    height: 50px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+
+}
+
+.border{
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    border: 1px solid white;
+    height: auto;
+}
+
+/* second box */
+
+.nav-address{
+    padding: 0px 9px;
+}
+
+.add-first{
+    color: #CCCCCC;
+    font-size:12px;
+    margin-left:30px;
+    cursor: pointer;
+
+}
+
+.add-second{
+    color:#FFFFFF;
+    font-size:18px;
+    margin-left:1px;
+    cursor: pointer;
+
+}
+
+.add-icon{
+    display:flex;
+    align-items: center;
+    margin-left:19px;
+    cursor: pointer;
+}
+
+/* third box */
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+    height: 40px;
+    border-radius: 3px;
+    padding: 10px 4px 10px 3px;
+}
+
+.nav-search:focus-within {
+    box-shadow: 10px 4px 10px 3px rgba(238, 112, 181, 0.514); /* Pink glowing border */
+    border: 2px solid rgba(238, 112, 181, 0.514); /* Solid pink border for clarity */
+}
+
+.search-select{
+    width: 55px;
+    color: #0f1111;
+    background-color: #E6E6E6;
+    padding:7px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 2px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    padding: 7px;
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: rgb(179, 12, 115);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color:#FFFFFF;
+    cursor: pointer;
+}
+
+/* fourth box */
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Spacing between elements */
+    color: #FFFFFF; /* Text color */
+    font-size: 16px; /* Font size for "EN" */
+    cursor: pointer; /* Pointer cursor for hover effect */
+    border: none;
+    font-weight: 800;
+}
+
+.language-selector .flag-icon {
+    width: 22px; /* Adjust width of the flag */
+    height: auto;
+}
+
+.language-selector i {
+    width:9px;
+    font-size: 10px; /* Adjust dropdown icon size */
+    color: #ffffffbe; /* Dropdown icon color */
+    justify-content: center;
+}
+
+/* fifth box */
+
+.nav-signin {
+    position: relative;
+    display: flex; /* To align text and icon horizontally */
+    flex-direction: column; /* Stack "Hello, sign in" and "Account & Lists" vertically */
+    align-items: flex-start; /* Align text to the left */
+    gap: 2px; /* Space between lines of text */
+    color: white;
+    cursor: pointer;
+}
+
+.nav-signin-text {
+    line-height: 1.2; /* Adjust spacing between the two lines */
+    display: inline-block; /* Ensures proper stacking */
+}
+
+.hello-text {
+    font-size: 12px; /* Smaller font for "Hello, sign in" */
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.nav-second {
+    font-size: 14px; /* Slightly larger font for "Account & Lists" */
+    font-weight: bold;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.nav-signin i {
+    position: absolute; /* Position the dropdown icon */
+    top: 60%; /* Vertically center-align the dropdown icon */
+    right: -12px; /* Slightly shift the icon to the right */
+    font-size: 12px; /* Adjust icon size */
+    color: #ffffffa9;
+}
+
+/* sixth box */
+
+.nav-returns{
+    cursor: pointer;
+}
+
+/* seventh box */
+
+.nav-cart i {
+    width: 40;
+    font-size: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.nav-cart{
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+} 
+
+/* panel sstylings */
+
+.panel{
+   height: 40px;
+   width: 100%;
+   background-color: rgba(4, 73, 4, 0.966);
+   display: flex;
+   color:#FFFFFF;
+   align-items: center;
+   padding: 8px;
+   font-size: 14px;
+   cursor: pointer;
+}
+
+.panel-all{
+    font-weight: bold;
+}
+
+
+
+.panel-option{
+
+    display:inline;
+    color:#FFFFFF;
+    width:79%;
+    margin: 18px;
+   
+}
+
+.panel-option a {
+    justify-content: space-evenly;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.panel-deal{
+    display:inline;
+    color:#FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+
+.hero-image{
+    background-image: url(hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; /* Makes the image height responsive */
+    width: 100%; /* Takes up the full width of its container */
+    min-height: 300px;
+}
+
+/* shop section */
+
+.shop-section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #CCCCCC;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 350px;
+    width: 23%;
+    background-color: #FFFFFF;
+    padding: 20px  0px 15px;
+    margin-top: 15px;
+}
+
+.box-img {
+    height: 260px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.box-content{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.box-content p {
+    color: #007185;
+    font-size:  15px;
+    cursor: pointer;
+}
+
+/* Parent container for images */
+.image-container {
+    display: flex; /* Arrange child elements in a row */
+    flex-wrap: wrap; /* Allow wrapping to the next row if space is limited */
+    gap: 10px; /* Add space between images */
+    justify-content: center; /* Center the images within the container */
+    align-items: center; /* Align images vertically within the row */
+}
+
+/* Individual image boxes */
+.image-box {
+    width: 120px; /* Set width for each image */
+    height: 110px; /* Set height for each image */
+    background-size: cover; /* Ensure the image covers the box without distortion */
+    background-position: center; /* Center the image within the box */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+
+    
+}
+
+.image-box1 {
+    width: 120px; /* Set width for each image */
+    height: 100px; /* Set height for each image */
+    background-size: cover; /* Ensure the image covers the box without distortion */
+    background-position: center; /* Center the image within the box */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+
+    
+}
+ 
+/* footer*/
+
+
+footer {
+    background-color:#CCCCCC; /* Optional: Set a background for the footer */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.foot1 {
+    background-color: white ;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically (if footer has more height) */
+    text-align: center; /* Align text in the center */
+    gap: 10px; /* Add spacing between lines */
+}
+
+.foot1 h2 {
+    color: #000000;
+    font-size: 24px;
+    margin: 0; /* Remove default margin */
+}
+
+.foot1 button {
+    width: 230px;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255, 212, 19, 0.74); /* Optional: Add a button color */
+    color: #000000;
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.foot1 p {
+    margin: 0; /* Remove default margin */
+    font-size: 13px;
+}
+
+.foot1 a {
+    text-decoration: none;
+    color: #007185; /* Optional: Add link color */
+    font-weight: bold;
+}
+
+.foot1 a:hover {
+    text-decoration: underline;
+}
+
+.foot2 {
+    background-color: #37475a;
+    height: 30px;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.foot3 {
+    background-color: #232F3E;
+    color: #FFFFFF;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul a {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #DDDDDD;
+    cursor: pointer;
+
+}
+
+ul p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 6px 0px 14px;
+    margin-top: 45px;
+}
+
+
+ul a:hover {
+    text-decoration : underline;
+}
+
+.foot4 {
+    background-color: #232F3E;
+    height: 60px;
+    width: 100%;
+    border-top: 0.1px solid rgba(255, 255, 255, 0.966);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img1 {
+    background-image: url('logo1.png'); /* Your logo with a background */
+    background-size: cover; /* Ensure the image covers the box without distortion */
+    background-position: center; /* Center the image within the box */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    cursor: pointer;
+    background-color: transparent;
+    height: 26px;
+}
+
+.foot5 {
+    background-color: #131A22;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+.pages {
+    color:#DDDDDD ;
+    font-size: 12px;
+    padding: 12px;
+}
+
+.copyright {
+    color:#DDDDDD ;
+    font-size: 12px;
+}
+
+.pages a {
+    padding: 10px;
+}
+
+
+.pages a:hover {
+    text-decoration : underline;
+    cursor: pointer;
+}
+
+
+
